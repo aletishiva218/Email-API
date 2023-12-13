@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Send Email API</h1>
+        <form name="form1">
+            <label for="temail">
+                <span>Email ID: </span><input type="email" placeholder="email Id..." id="temail" name="temail" required>
+            </label>
+            <label for="esub">
+                <span>Subject: </span><input type="text" placeholder="subject..." id="esub" name="esub" required>
+            </label>
+            <textarea name="ebody" id="ebody" cols="30" rows="10" placeholder="body..." name="ebody" required></textarea>
+        </form>
+        <span class="feat-text"></span>
+        <button onclick="sendEmail()">Send Message</button>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="script.js">
+    </script>
+</body>
+</html>
